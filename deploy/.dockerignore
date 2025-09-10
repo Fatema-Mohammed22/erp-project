@@ -1,0 +1,9 @@
+.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.deploy-cache
+.env           # we’ll pass env through docker-compose instead
+data/*.db-journal

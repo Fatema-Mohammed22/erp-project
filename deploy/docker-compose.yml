@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    container_name: agent_erp_api
+    ports:
+      - "8000:8000"
+    environment:
+      # override inside container if you bind-mount a local db file
+      APP_ENV: "prod"
+      SQLITE_PATH: "/app/data/erp_sample.db"
+    volumes:
+      - ./data:/app/data         # so the local erp_sample.db persists/updates
+    restart: unless-stopped

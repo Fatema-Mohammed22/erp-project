@@ -1,0 +1,12 @@
+pytest 
+httpx       #for API testing
+requests
+pytest-asyncio
+fastapi
+uvicorn[standard]
+pydantic
+streamlit
+sqlalchemy
+pandas
+numpy
+python-dotenv

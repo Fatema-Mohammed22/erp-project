@@ -1,0 +1,14 @@
+2025-09-07 21:10:43 - Saved CSV: top_products.csv
+2025-09-07 21:10:43 - Saved plot: top_products.png
+2025-09-07 21:11:26 - Saved CSV: anomalous_orders.csv
+2025-09-07 21:11:26 - Detected 1 anomalous orders
+2025-09-07 21:12:04 - Saved CSV: lead_scores.csv
+2025-09-07 21:12:04 - Exported 100 lead scores
+2025-09-08 00:09:38 - Saved CSV: top_products.csv
+2025-09-08 00:09:39 - Saved plot: top_products.png
+2025-09-08 00:09:44 - Saved CSV: anomalous_orders.csv
+2025-09-08 00:09:44 - Detected 1 anomalous orders
+2025-09-08 00:09:46 - Saved CSV: lead_scores.csv
+2025-09-08 00:09:46 - Exported 100 lead scores
+2025-09-08 00:09:50 - Saved CSV: sales_by_customer.csv
+2025-09-08 00:09:51 - Saved plot: sales_by_customer.png

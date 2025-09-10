@@ -1,0 +1,78 @@
+helios-erp/
+├─ backend/                        # Teammate 1 ✅ 
+│   └─ main.py                # FastAPI entrypoint
+│
+├─ scripts/                   #  DB setup
+│  ├─ init_db.py              # initialize schema into DB
+│  └─ seed_approval.py        # insert test data
+│
+├─ routers/
+│   ├─ approvals.py           # Approvals endpoints
+|   ├─__init__.py
+│   └─ meta.py                # Metadata endpoints
+│
+├─ utils/
+│   ├─ logger.py              # Logs tool calls into DB
+│   └─ db.py                  # DB helpers
+│
+├─ data/
+│    └─ erp_sample.db        # Sample SQLit database
+│
+├─ deploy/
+│   ├─ Dockerfile             # Build instructions
+│   ├─ docker-compose.yml     # Run locally with Docker Compose
+│   ├─ requirements.txt       # Python dependencies
+│   └─ .env                   # Environment variables
+│
+│  ├─ rag/                        # Teammate 2 ✅
+│  │  ├─ retriever.py                 # retrieval logic
+│  │  └─ glossary_store.md            # glossary storage
+│
+│  ├─ services/                      # Teammate 4 – ML + intelligence
+│  │  ├─ approvals.py                 # approval flow logic
+│  │  ├─ audit.py                     # audit logs
+│  │  ├─ anomaly.py                   # anomaly detection
+│  │  └─ forecasting.py               # forecasting model
+│
+│  ├─ routers/                       # Teammate 1 + 3 – API endpoints
+│  │  ├─ customers.py                 # customer endpoints
+│  │  ├─ suppliers.py                 # suppliers endpoints
+│  │  ├─ products.py                  # products endpoints
+│  │  ├─ orders.py                    # orders endpoints
+│  │  ├─ invoices.py                  # invoices endpoints
+│  │  ├─ inventory.py                 # inventory endpoints
+│  │  ├─ ledger.py                    # ledger endpoints
+│  │  ├─ glossary.py                  # glossary endpoints
+│  │  └─ health.py                 
+│
+│  └─ mcp/                           # Teammate 2 – Tool registry/adapters
+│     ├─ tool_registry.json           # registered tools list
+│     ├─ adapters/
+│     │  ├─ sql_adapter.py            # SQL tool wrapper
+│     │  ├─ rag_adapter.py            # RAG tool wrapper
+│     │  └─ ml_adapter.py             # ML tool wrapper
+│     ├─ tests/                       # MCP pipeline tests
+│     └─ demo_pipeline.md             # usage demo & screenshots
+│
+├─ agents/                           # Teammate 3 – Core domain agents
+│  ├─ router_agent.py                 # routes requests to right agent/tool
+│  ├─ memory.py                       # buffer + persistent memory
+│  ├─ sales_agent.py                  # CRM agent
+│  ├─ finance_agent.py                # Finance agent
+│  └─ inventory_agent.py              # Inventory agent
+│
+├─ analytics/                        # Teammate 4 – Analytics + visualization
+│  ├─ analytics_agent.py              # SQL → chart pipelines
+│  └─ examples.md                     # visualization examples
+│
+├─ ui/                               # Teammate 5 – User-facing interface
+│  └─ streamlit_app.py                # Streamlit chat app
+│
+├─ tests/                            # Teammate 5 – Workflow verification
+│  ├─ test_workflows.py               # end-to-end tests
+│  └─ test_rag_vs_no_rag.py           # compare RAG vs direct SQL
+│
+├─ logs/                             # Teammate 5 – Screenshots/logs
+│  └─ .gitkeep
+│
+└─ README.md                         # Teammate 5 – Setup & documentation
